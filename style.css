@@ -1,0 +1,23 @@
+:root {
+    --cinza--principal: #465053;
+}
+
+body {
+    font-size: 16px;
+    background-color: var(--cinza--principal);
+}
+
+a {
+    text-decoration: none;
+}
+
+.principal {
+    display: flex;
+    height: 72px;
+}
+
+.cabecalho {
+    display: grid;
+    grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+    height: 72px;
+}
