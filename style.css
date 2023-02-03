@@ -1,10 +1,13 @@
 :root {
-    --cinza--principal: #465053;
+    --cinza--principal: #C0C0C0;
+    --fonte-principal: 'unbounded';
 }
 
 body {
-    font-size: 16px;
+    font-size: 14px;
     background-color: var(--cinza--principal);
+    font-family: var(--fonte-principal) ;
+    font-weight: 400;
 }
 
 a {
@@ -12,12 +15,126 @@ a {
 }
 
 .principal {
-    display: flex;
-    height: 72px;
+    display: grid;
+    grid-template-columns: 20% 50% 15% 15%;
+    height: 118px;
 }
 
-.cabecalho {
+.container__logo {
+    margin: 2em 6em;
+}
+
+.logo {
+    width: 140px;
+}
+
+.container__cabecalho {
+    margin: 59px 0 59px 6em;
+}
+
+.container__cabecalho a {
+    margin-right: 5px;
+}
+
+/*Logo Instagram*/
+
+.link__cabecalho--Instagram {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    border: 2px solid transparent;
+    box-shadow: 0 0 0 2px;
+    border-radius: 4px;
+    width: 20px;
+    height: 20px
+   }
+   
+.link__cabecalho--Instagram::after,
+.link__cabecalho--Instagram::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute
+   }
+   
+.link__cabecalho--Instagram::after {
+    border: 2px solid;
+    left: 3px;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    top: 3px
+   }
+   
+.link__cabecalho--Instagram::before {
+    border-radius: 3px;
+    width: 2px;
+    height: 2px;
+    background: currentColor;
+    right: 1px;
+    top: 1px
+   } 
+
+/*Logo Facebook */
+.link__cabecalho--Facebook {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 20px;
+    height: 20px
+   }
+   
+   .link__cabecalho--Facebook::after,
+   .link__cabecalho--Facebook::before {
+    content: "";
+    display: block;
+    position: absolute;
+    box-sizing: border-box
+   }
+   
+   .link__cabecalho--Facebook::before {
+    width: 8px;
+    height: 20px;
+    border-left: 4px solid;
+    border-top: 4px solid;
+    border-top-left-radius: 5px;
+    left: 6px
+   }
+   
+   .link__cabecalho--Facebook::after {
+    width: 10px;
+    height: 4px;
+    background: currentColor;
+    top: 7px;
+    left: 4px;
+    transform: skew(-5deg)
+   } 
+
+/*Fim do CSS das logos*/
+
+
+.container__redes--sociais {
+    margin: 55px 0;
+    display: flex;
+}
+
+.container__redes--sociais a {
+    margin-left: 3em;
+}
+
+.container__menu--expande {
+    margin: 59px 2em 59px 0;
+}
+
+.area__principal {
+    background-image: url(imagens/imagem_fundo.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    align-items: center;
+    text-align: left;
+    height: 517px;
     display: grid;
-    grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
-    height: 72px;
+    grid-template-columns: 100%
 }
