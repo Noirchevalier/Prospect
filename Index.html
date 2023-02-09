@@ -25,21 +25,104 @@
             <a href="#" class="link__cabecalho">Contato</a>
         </div>
         <div class="container__redes--sociais">
-            <a href="#" class="link__cabecalho--Facebook"></a>
-            <a href="#" class="link__cabecalho--Instagram"></a>
+            <a href="https://www.facebook.com/ECGEmpreendimentosEConstrucoes" class="link__cabecalho--Facebook"></a>
+            <a href="https://www.instagram.com/prospectkaririimoveis/" class="link__cabecalho--Instagram"></a>
         </div>
         <div class="container__menu--expande">
             <a href="#">"Menu que expande aqui"</a>
         </div>
     </header>
     <main>
-        <section class="area__principal">
-            <input type="text" placeholder="Digite aqui o que procura" class="barra__pesquisa">
+        <section>
+            <div class="area__principal">
+                <input type="text" placeholder="Digite aqui o que procura" class="barra__pesquisa">
+            </div>
         </section>
 
+        <section>
+            <h1>Nossos imóveis</h1>
+            <div class="titulo__casas"> 
+                <h2>Casa de andar no Pimenta</h2>
+                <h2>Casa de andar no Grangeiro</h2>
+                <h2>Apartamento em prédio</h2>
+            </div>
+            <div class="secao__casas">
+                <a href="#"><img src="imagens/casa1/casa1.jpg" alt="Foto da casa número 1" class="foto__casas"></a>
+                <a href="#"><img src="imagens/casa2/casa2.jpg" alt="Foto da casa número 2" class="foto__casas"></a>
+                <a href="#"><img src="imagens/casa3/casa3.jpg" alt="Foto da casa número 3" class="foto__casas"></a>
+            </div>
+            <div class="descricao__casas"> 
+                <p>Casa de andar no Pimenta</p>
+                <p>Casa de andar no Grangeiro</p>
+                <p>Apartamento em prédio</p >
+            </div>
+        </section>
+
+        <section>
+            <h2 class="titulo__mapa">Onde Estamos</h2>
+            <div class="secao__mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15832.168325643459!2d-39.4091787!3d-7.2360403!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7a18551e056a4f5%3A0x6db88c4689fbb778!2sEscrit%C3%B3rio%20imobili%C3%A1rio%20Deus%20%C3%A9%20Amor!5e0!3m2!1spt-BR!2sbr!4v1675878789069!5m2!1spt-BR!2sbr" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
     </main>
     <footer>
+        <!--<section class="rodape">
+            <div class="informacoes">
+                <div class="logo__rodape">
+                    <img src="imagens/logo.png" alt="Logo Alura Geek">
+                </div>
+                <div class="Contatos">
+                    <p>Quem somos nós</p>
+                    <p>Política de privacidade</p>
+                    <p>Programa fidelidade</p>
+                    <p>Nossas lojas</p>
+                    <p>Quero ser franqueado</p>
+                    <p>Anuncie aqui</p>
+                </div>
+            </div>
+        
+            <div class="faleconosco">
+                <h3>Fale conosco</h3>
+                <div class="textoenviar">
+                    <input type="text" placeholder="Nome">
+                    <textarea name="Escreva sua mensagem" id="mensagem" cols="10" rows="5" placeholder="Escreva aqui sua mensagem"></textarea>
+                    <a href="#" class="mensagem">Enviar mensagem</a>
+                </div>
+            </div>
+        </section>-->
 
+        <section class="rodape__desktop">
+            <div class="container__logo__rodape">
+                <a href="Index.html" ><img src="imagens/Logo.png" alt="Logo Imobiliária" class="logo__rodape"></a>
+            </div>
+            <div class="informacoes">
+                <a href="">Quem somos nós</a>
+                <a href="">Política de privacidade</a>
+                <a href="">Programa fidelidade</a>
+                <a href="">Nossas lojas</a>
+                <a href="">Quero ser franqueado</a>
+                <a href="">Anuncie aqui</a>
+            </div>
+        
+            <div class="faleconosco">
+                <h3>Fale conosco</h3>
+                <div>
+                    <form action="" method="get" class="textoenviar">
+                        <label for="nome">Insira seu nome</label>
+                        <input type="text" id="nome" name="Nome" placeholder="Nome" required>
+                        <label for="phone">Insira seu numero de teletone (De preferência Whatsapp)</label>
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{2}[9]{1}[0-9]{4}[0-9]{4}" placeholder="Exemplo: (88) 9 8888-8888 " required>
+                        <label for="mensagem">O que deseja nos dizer?</label>
+                        <textarea name="Escreva sua mensagem" id="mensagem" cols="10" rows="5" placeholder="Escreva aqui sua mensagem" required></textarea>
+                        <button type="submit" value="Submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+        <section class="creditos">
+            <h3>Desenvolvido por Lucieldo.</h3>
+        </section>
     </footer>
 </body>
 </html>

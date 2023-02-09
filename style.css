@@ -1,35 +1,83 @@
 :root {
-    --cinza--principal: #C0C0C0;
+    --cinza--principal: #6D6D6D;
+    --cor--fundo--Main: #ffffff;
+    --cor-botao: #00BFFF;
+    --fonte-cor--principal: #FF890C;
+    --fonte-cor--hover: #FFDC00;
+    --fonte-cor--active: #B8FF29;
+    --cor--fonte--fundo--preto: #000000;
     --fonte-principal: 'unbounded';
 }
 
 body {
     font-size: 14px;
-    background-color: var(--cinza--principal);
+    background-color: var(--cor--fundo--Main);
     font-family: var(--fonte-principal) ;
     font-weight: 400;
 }
 
+main {
+    background-color: var(--cor--fundo--Main)
+}
+
 a {
     text-decoration: none;
+    color: var(--fonte-cor--principal);
+}
+
+.container__cabecalho a:hover {
+    color: var(--fonte-cor--hover);
+    transition: 1s;
+    font-size: 15px;
+}
+
+.container__cabecalho a:active {
+    color: var(--fonte-cor--active);
+    transition: 0s;
+}
+
+.container__redes--sociais a:active {
+    color: var(--fonte-cor--active);
+    transition: 0s;
 }
 
 .principal {
     display: grid;
-    grid-template-columns: 20% 50% 15% 15%;
+    background: var(--cor--fundo--Main);
+    grid-template-columns: 10% 60% 15% 15%;
     height: 118px;
 }
 
 .container__logo {
-    margin: 2em 6em;
+    margin: 0 3em;
+    background-color: var(--cinza--principal);
+    height: 118px;
+    width: 133px;
+    overflow: hidden;
+}
+
+.container__logo__rodape {
+    margin: 3em 3em;
+    background-color: var(--fonte-cor--principal);
+    height: 260px;
+    width: 240px;
+    overflow: hidden;
 }
 
 .logo {
-    width: 140px;
+    width: 180px;
+    height: 180px;
+    margin: -30px -23px;
+}
+
+.logo__rodape {
+    width: 300px;
+    height: 300px;
+    margin: 0px -23px;
 }
 
 .container__cabecalho {
-    margin: 59px 0 59px 6em;
+    margin: 59px 0 59px 12em;
 }
 
 .container__cabecalho a {
@@ -133,8 +181,164 @@ a {
     background-repeat: no-repeat;
     background-size: 100% 100%;
     align-items: center;
-    text-align: left;
+    text-align: center;
     height: 517px;
     display: grid;
-    grid-template-columns: 100%
+    grid-template-columns: 100%;
+}
+
+.area__principal input {
+    text-align: left;
+    padding-left: 30px;
+    font-weight: 700;
+    width: 40%;
+    height: 25px;
+    margin: 0 410px;
+    border-radius: 20px;
+}
+
+.titulo__casas__titulo {
+    display: flex;
+}
+
+.titulo__casas {
+    display: flex;
+    margin: 10px 0;
+}
+
+main h1 {
+    text-align: center;
+    margin: 25px 0;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.titulo__casas h2 {
+    text-align: center;
+    margin-left: 170px;
+}
+
+.secao__casas {
+    display: flex;
+    margin: 30px 80px;
+}
+
+.foto__casas {
+    width: 350px;
+    height: 450px;
+    margin: 0 23px;
+}
+
+.descricao__casas {
+    display: flex;
+    margin: 10px 0;
+}
+
+.descricao__casas p {
+    text-align: center;
+    margin-left: 170px;
+}
+
+.titulo__mapa {
+    margin: 40px 580px;
+    font-weight: 700;
+    width: 185px;
+    white-space: nowrap;
+    font-size: 20px;
+    border: solid black 3px;
+    border-radius: 8px;
+}
+
+.secao__mapa {
+    display: block;
+    margin: auto;
+    width: 600px;
+    height: 300px;
+    border: solid black 8px;
+    border-radius: 8px;
+}
+
+footer {
+    margin-top: 30px;
+}
+
+.rodape__desktop {
+    display: grid;
+    background-color: var(--cor-footer);
+    padding-top: 1em;
+    grid-template-columns: 23% 23% 54%;
+    margin-top: 60px;
+    background-color: var(--fonte-cor--principal);
+}
+
+.informacoes {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 64px;
+    gap: 25px;
+    align-items: flex-start;
+    font-size: 15px;
+}
+
+.informacoes a {
+    color: black;
+}
+
+.informacoes a:hover {
+    color: var(--fonte-cor--hover);
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.faleconosco {
+    margin: 50px 64px;
+    display: flex;
+    flex-direction: column;
+}
+
+.textoenviar {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    gap: 12px;
+}
+
+.textoenviar input {
+    padding-left: 10px;
+    border-radius: 10px;
+}
+
+.textoenviar textarea {
+    border-radius: 20px;
+    padding: 10px 0 0 10px;
+}
+
+.textoenviar button {
+    color: black;
+    border: var(--cor-botao) solid 1px;
+    background-color: var(--cor-botao);
+    width: 160px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.textoenviar button:hover {
+    color: var(--cor--fundo--Main);
+    font-size: 16px;
+    transition: 0.3s;
+    width: 180px;
+}
+
+.creditos {
+    margin: 0 500px;
+}
+
+.creditos {
+display: flex;
+background-color: var(--cor--fundo--Main);
+flex-direction: row;
+padding: 32px;
+text-align: center;
+font-size: 16px;
+font-weight: 500;
 }
