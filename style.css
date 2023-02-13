@@ -28,7 +28,7 @@ a {
 .container__cabecalho a:hover {
     color: var(--fonte-cor--hover);
     transition: 1s;
-    font-size: 15px;
+    font-size: 16px;
 }
 
 .container__cabecalho a:active {
@@ -46,6 +46,7 @@ a {
     background: var(--cor--fundo--Main);
     grid-template-columns: 10% 60% 15% 15%;
     height: 118px;
+    border-bottom: var(--cinza--principal) solid 5px;
 }
 
 .container__logo {
@@ -77,11 +78,14 @@ a {
 }
 
 .container__cabecalho {
-    margin: 59px 0 59px 12em;
+    display: flex;
+    gap: 16px;
+    margin: 59px 0 59px 13em;
 }
 
 .container__cabecalho a {
     margin-right: 5px;
+    font-size: 15px;
 }
 
 /*Logo Instagram*/
@@ -183,18 +187,39 @@ a {
     align-items: center;
     text-align: center;
     height: 517px;
-    display: grid;
-    grid-template-columns: 100%;
+    display: flex;
 }
 
-.area__principal input {
+.area__pesquisa {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.barra__pesquisa {
+    display: block;
+    font-weight: 400;
+    align-items: center;
     text-align: left;
-    padding-left: 30px;
-    font-weight: 700;
-    width: 40%;
-    height: 25px;
-    margin: 0 410px;
+    padding: 5px 0 5px 10px;
+    margin-left: 360px;
+    text-decoration: none;
+    background-color: var(--cor--fundo--Main);
+    border: 1px solid var(var(--cor--fonte--fundo--preto));
     border-radius: 20px;
+    height: 25px;
+    width: 580px;
+}
+
+.botao__pesquisa {
+    display: block;
+    margin: 5px 340px 0 0;
+    padding: 0;
+    border: none;
+    background-color: var(--cor--fundo--Main);
+    border: var(--cor--fonte--fundo--preto) solid 3px;
+    height: 40px;
+    width: 45px;
+    border-radius: 25px;
 }
 
 .titulo__casas__titulo {
@@ -230,13 +255,26 @@ main h1 {
 }
 
 .descricao__casas {
-    display: flex;
-    margin: 10px 0;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
 }
 
-.descricao__casas p {
+.descricao__casas a {
     text-align: center;
-    margin-left: 170px;
+    margin-left: 130px;
+    white-space: nowrap;
+    font-size: 16px;
+}
+
+.descricao__casas a:hover {
+    color: var(--fonte-cor--hover);
+    transition: 1s;
+    font-size: 17px;
+}
+
+.descricao__casas a:active {
+    color: var(--fonte-cor--active);
+    transition: 0s;
 }
 
 .titulo__mapa {
@@ -341,4 +379,40 @@ padding: 32px;
 text-align: center;
 font-size: 16px;
 font-weight: 500;
+}
+
+/* Fim do CSS da Index.html
+
+Início do CSS da página Contatos */
+
+.contato__1 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    border: var(--cor--fonte--fundo--preto) solid 5px;
+    margin: 30px 360px;
+}
+
+.contato__1 img{
+    width: 300px;
+    height: 240px;
+}
+
+.contato__1 p{
+    margin: 20px 30px;
+}
+
+.contato__2 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    border: var(--cor--fonte--fundo--preto) solid 5px;
+    margin: 30px 360px;
+}
+
+.contato__2 img{
+    width: 300px;
+    height: 240px;
+}
+
+.contato__2 p{
+    margin: 20px 30px;
 }
