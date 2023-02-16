@@ -228,6 +228,18 @@ a {
     margin: 10px 0;
 }
 
+.titulo__casas__novidades {
+    display: flex;
+    margin: 50px 0 0 0;
+}
+
+.titulo__novidades {
+    font-weight: 700;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 24px;
+}
+
 main h1 {
     text-align: center;
     margin: 25px 0;
@@ -237,7 +249,15 @@ main h1 {
 
 .titulo__casas h2 {
     text-align: center;
-    margin-left: 170px;
+    margin-left: 140px;
+    padding-left: 10px;
+}
+
+.titulo__casas__novidades h2 {
+    text-align: center;
+    margin-left: 100px;
+    font-weight: 700;
+    font-size: 17px;
 }
 
 .secao__casas {
@@ -492,6 +512,37 @@ Início do CSS da página dos imóveis */
     color: var(--cor--fonte--fundo--preto);
     font-weight: 700;
     margin: auto;
+}
+
+/* Fim do CSS da parte dos imóveis 
+
+Ínicio do CSS da parte do cabeçalho */
+
+
+.secao__casas__lista {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    margin: 50px 0 0 60px;
+}
+
+.secao__casas__lista p {
+    font-weight: 700;
+    font-size: 13px;
+    margin: 10px 7px;
+}
+
+.secao__casas__lista img {
+    width: 270px;
+    height: 220px;
+}
+
+.casa__lista__unidade {
+    height: 400px;
+    border: var(--cinza--principal) solid 3px;
+    margin-left: 10px;
+    padding-top: 20px;
+    border-radius: 10px;
+    text-align: center;
 }
 
 
