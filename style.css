@@ -566,7 +566,13 @@ Início do CSS da página dos imóveis */
     text-indent: 4em;
     line-height: 1.5;
     font-size: 19px;
-    margin-top: 70px;
+    margin-top: 50px;
+}
+
+.slogan {
+    margin-left: 100px;
+    font-weight: 700;
+    font-size: 22px;
 }
 
 .foto__sobre__nos {
@@ -594,4 +600,62 @@ Início do CSS da página dos imóveis */
     margin-left: 70px;
     width: 350px;
     height: 350px;
+}
+
+/* CSS da política de privacidade */
+
+.titulo__politica {
+    margin: 50px 0;
+    font-size: 25px;
+}
+
+.texto__politica {
+    font-size: 12px;
+    margin: 0 50px;
+    line-height: 20px;
+    text-indent: 4em;
+}
+
+/* Css Nossa loja */
+
+.nossaloja__section {
+    border: var(--cinza--principal) solid 10px;
+    margin: 20px 100px;
+    border-radius: 20px;
+}
+
+.nossaloja {
+    margin: 60px 200px;
+}
+
+.texto__nossaloja {
+margin: 30px 250px;
+line-height: 30px;
+font-weight: 700;
+font-size: 17px;
+}
+
+/* CSS anuncie aqui */
+
+.foto__equipe {
+    margin: 30px 370px;
+    border: var(--cinza--principal) solid 10px;
+    border-radius: 10px;
+}
+
+.anuncie__aqui {
+    border: var(--fonte-cor--principal) solid 20px;
+    margin: 40px 100px;
+}
+
+.texto__anuncie__aqui {
+    margin: 30px 230px;
+    line-height: 20px;
+    font-size: 17px;
+}
+
+.link__conosco {
+    margin: 0 5px;
+    font-size: 19px;
+    font-weight: 700;
 }
